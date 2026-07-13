@@ -135,15 +135,15 @@
     <form name="submit-to-google-sheet">
         <div class="form-group">
             <label>পদের নাম</label>
-            <input type="text" name="postName" placeholder="যেমন: Assistant Teacher" required>
+            <input type="text" name="postName" placeholder="যেমন: Assistant Teacher" oninput="this.value = this.value.toUpperCase()" required>
         </div>
         <div class="form-group">
             <label>আইডি / সিভি নাম্বার</label>
-            <input type="text" name="idCv" placeholder="আইডি বা টেক্সট লিখুন" required>
+            <input type="text" name="idCv" placeholder="আইডি বা টেক্সট লিখুন" oninput="this.value = this.value.toUpperCase()" required>
         </div>
         <div class="form-group">
             <label>পাসওয়ার্ড / ট্রাকিং নাম্বার</label>
-            <input type="text" name="trackingId" placeholder="পাসওয়ার্ড বা ট্রাকিং নাম্বার দিন" required>
+            <input type="text" name="trackingId" placeholder="পাসওয়ার্ড বা ট্রাকিং নাম্বার দিন" oninput="this.value = this.value.toUpperCase()" required>
         </div>
         <div class="form-group">
             <label>পদের সংখ্যা</label>
@@ -160,11 +160,15 @@
         </div>
     </form>
     
-    <div class="message" id="successMsg">তথ্য স্বয়ংক্রিয়ভাবে গুগল শিটে জমা হয়েছে!</div>
+    <div class="message" id="successMsg">তথ্য স্বয়ংক্রিয়ভাবে তথ্য জমা হয়েছে!</div>
+    <!-- মেধা স্বত্ব (Copyright) সেকশন -->
+<div style="text-align: center; font-family: 'Segoe UI', Tahoma, sans-serif; color: #444; border-top: 1px solid #ddd; padding-top: 20px; margin-top: 40px; font-size: 13px;">
+    <p style="margin: 0; font-weight: bold; color: #2c3e50;">
+        &copy; 2026 Mahmudul Hasan | সর্বস্বত্ব সংরক্ষিত
+    </p>
     
-    <div class="copyright">
-        মেধা স্বত্ব &copy; Mahmudul Hasan
-    </div>
+</div>
+    
 </div>
 
 <script>
