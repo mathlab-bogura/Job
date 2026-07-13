@@ -135,7 +135,7 @@
     <form name="submit-to-google-sheet">
         <div class="form-group">
             <label>পদের নাম</label>
-            <input type="text" name="postName" placeholder="যেমন: Assistant Teacher" oninput="this.value = this.value.toUpperCase()" required>
+            <input type="text" name="postName" placeholder="যেমন: Assistant Teacher"  oninput="this.value = this.value.toLowerCase().replace(/\b\w/g, c => c.toUpperCase())" required>
         </div>
         <div class="form-group">
             <label>আইডি / সিভি নাম্বার</label>
